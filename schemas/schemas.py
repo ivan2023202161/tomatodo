@@ -110,7 +110,9 @@ class RecetaUpdate(BaseModel):
     descripcion: Optional[str] = None
     tiempo_min: Optional[int] = None
     dificultad: Optional[str] = None
-    ingredientes: Optional[List[str]] = None
+    tipo: Optional[str] = None
+    categoria: Optional[str] = None
+    ingredientes: Optional[List[IngredienteReceta]] = None
     pasos: Optional[List[str]] = None
     emoji: Optional[str] = None
 
